@@ -54,7 +54,7 @@
         text-align: center;
         background: #193549;
         color: white;
-        font-family: 'helvetica neue', sans-serif;
+        font-family: "helvetica neue", sans-serif;
         font-weight: 100;
         font-size: 50px;
       }
@@ -79,21 +79,21 @@
     </style>
 
     <script>
-      const rootStyle = document.querySelector(':root');
-      const slider = document.querySelector('#spacing');
-      const blur = document.querySelector('#blur');
-      const base = document.querySelector('#base');
+      const rootStyle = document.querySelector(":root");
+      const slider = document.querySelector("#spacing");
+      const blur = document.querySelector("#blur");
+      const base = document.querySelector("#base");
 
-      slider.addEventListener('input', () => {
-        rootStyle.style.setProperty('--spacing', `${slider.value}px`);
+      slider.addEventListener("input", () => {
+        rootStyle.style.setProperty("--spacing", `${slider.value}px`);
       });
 
-      blur.addEventListener('input', () => {
-        rootStyle.style.setProperty('--blur', `${blur.value}px`);
+      blur.addEventListener("input", () => {
+        rootStyle.style.setProperty("--blur", `${blur.value}px`);
       });
 
-      base.addEventListener('input', () => {
-        rootStyle.style.setProperty('--base', `${base.value}`);
+      base.addEventListener("input", () => {
+        rootStyle.style.setProperty("--base", `${base.value}`);
       });
     </script>
   </body>
