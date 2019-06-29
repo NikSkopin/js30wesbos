@@ -37,8 +37,9 @@ videoSpeed.addEventListener("input", () => {
 });
 
 progressBar.addEventListener("click", e => {
-  let xPosition = e.clientX;
-  let barWidth = progressBar.clientWidth;
+  let xPosition = e.layerX;
+  //   let barWidth = progressBar.clientWidth;
+  let barWidth = document.querySelector(".player").clientWidth;
 
   let clickPosition = xPosition / barWidth;
 
